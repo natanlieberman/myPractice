@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+<p>office works!</p>
+<button (click)="call_maneger = call_maneger +1" >call maneger</button>
+<button (click)="call_secretary = call_secretary +1" >call secretary</button>
+<button (click)="call_worker = call_worker +1" >call worker</button>
+<app-maneger [input]= "call_maneger" (output)="call_maneger = call_maneger -1"></app-maneger>
+<app-secretary [input]= "call_secretary" (output)="call_secretary = call_secretary -1"></app-secretary>
+<app-worker [input]= "call_worker" (output)="call_worker = call_worker -1"></app-worker>
